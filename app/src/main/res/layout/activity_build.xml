@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Front.BuildActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="@font/bungee"
+            android:text="Add Build"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:transitionName="logo_name" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/final_logo" />
+
+        <EditText
+            android:id="@+id/buildname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="Build Name"
+            android:textColorHint="@color/golden" />
+
+        <EditText
+            android:id="@+id/buildprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="price sq/ft"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/golden" />
+
+        <EditText
+            android:id="@+id/buildphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:hint="No with +91"
+            android:inputType="number"
+            android:textColorHint="@color/golden" />
+
+        <Button
+            android:id="@+id/chooseimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/black_border"
+            android:drawableStart="@drawable/ic_cameraplus"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingRight="80dp"
+            android:text="Add Images"
+            android:textAllCaps="false"
+            android:textColor="@color/golden"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/uploaded_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/bungee"
+            android:text="Click to Add"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+</ScrollView>
